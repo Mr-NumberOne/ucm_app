@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:council_topic_type_ucm_name",
+ "creation": "2023-07-07 01:23:39.763069",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "council_topic_type_ucm_name",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_council_topic_type_ucm"
+ ],
+ "fields": [
+  {
+   "fieldname": "council_topic_type_ucm_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Council Topic Type UCM Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Council Topic Type UCM"
+  },
+  {
+   "fieldname": "parent_council_topic_type_ucm",
+   "fieldtype": "Link",
+   "label": "Parent Council Topic Type UCM",
+   "options": "Council Topic Type UCM"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2023-07-07 01:24:19.591413",
+ "modified_by": "Administrator",
+ "module": "Ucm App",
+ "name": "Council Topic Type UCM",
+ "naming_rule": "By fieldname",
+ "nsm_parent_field": "parent_council_topic_type_ucm",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

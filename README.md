@@ -1,6 +1,6 @@
 ## Ucm App
 
-d
+University Council Meeting System
 
 #### License
 

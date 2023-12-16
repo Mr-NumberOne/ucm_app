@@ -9,9 +9,9 @@ from ucm_app import __version__ as version
 setup(
 	name="ucm_app",
 	version=version,
-	description="d",
-	author="d",
-	author_email="d@d.d",
+	description="University Council Meeting System",
+	author="Jawad Alsarookh",
+	author_email="jawadalsarookh@gmail.com",
 	packages=find_packages(),
 	zip_safe=False,
 	include_package_data=True,

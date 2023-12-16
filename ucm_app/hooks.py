@@ -2,9 +2,9 @@ from . import __version__ as app_version
 
 app_name = "ucm_app"
 app_title = "Ucm App"
-app_publisher = "d"
-app_description = "d"
-app_email = "d@d.d"
+app_publisher = "Jawad Alsarookh"
+app_description = "University Council Meeting System"
+app_email = "jawadalsarookh@gmail.com"
 app_license = "MIT"
 
 # Includes in <head>

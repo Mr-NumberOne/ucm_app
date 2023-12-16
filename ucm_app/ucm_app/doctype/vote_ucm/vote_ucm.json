@@ -1,0 +1,156 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{topic}-{vote_type}-{voter}",
+ "creation": "2023-07-07 21:37:51.476912",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "topic",
+  "vote_type",
+  "reason",
+  "column_break_xz93t",
+  "vote_count",
+  "section_break_1olj9",
+  "voters",
+  "vote_result",
+  "section_break_pc3ch",
+  "agenda",
+  "meeting",
+  "voter"
+ ],
+ "fields": [
+  {
+   "fieldname": "vote_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u062a\u0635\u0648\u064a\u062a",
+   "options": "\n\u0646\u0639\u0645\n\u0644\u0627\n\u0645\u062a\u062d\u0641\u0638",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0633\u0628\u0628",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vote_count",
+   "fieldtype": "Int",
+   "label": "\u0639\u062f\u062f \u0627\u0644\u0645\u0635\u0648\u062a\u064a\u0646"
+  },
+  {
+   "fieldname": "voters",
+   "fieldtype": "Table",
+   "label": "\u0642\u0627\u0626\u0645\u0629 \u0627\u0644\u0645\u0635\u0648\u062a\u064a\u0646",
+   "options": "Members Voters UCM"
+  },
+  {
+   "fieldname": "vote_result",
+   "fieldtype": "Data",
+   "label": "\u0646\u062a\u064a\u062c\u0629 \u0627\u0644\u062a\u0635\u0648\u064a\u062a"
+  },
+  {
+   "fieldname": "topic",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0644\u0645\u0648\u0636\u0648\u0639",
+   "options": "Topic UCM",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "topic.agenda",
+   "fieldname": "agenda",
+   "fieldtype": "Link",
+   "label": "\u062c\u062f\u0648\u0644 \u0627\u0644\u0627\u0639\u0645\u0627\u0644 ",
+   "options": "Agenda"
+  },
+  {
+   "fetch_from": "agenda.meeting_in_agenda",
+   "fieldname": "meeting",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u062c\u0644\u0633\u0629",
+   "options": "Meeting UCM",
+   "remember_last_selected_value": 1
+  },
+  {
+   "fieldname": "voter",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0645\u0635\u0648\u062a"
+  },
+  {
+   "fieldname": "column_break_xz93t",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_pc3ch",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_1olj9",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-06 23:39:19.911791",
+ "modified_by": "Administrator",
+ "module": "Ucm App",
+ "name": "Vote UCM",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "\u0639\u0636\u0648 \u0645\u062c\u0644\u0633",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "\u0645\u0642\u0631\u0631 \u0645\u062c\u0644\u0633",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "\u0631\u0626\u064a\u0633 \u0645\u062c\u0644\u0633",
+   "share": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

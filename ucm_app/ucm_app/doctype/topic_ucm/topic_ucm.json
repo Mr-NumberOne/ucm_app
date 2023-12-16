@@ -1,0 +1,286 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format: {\u0645\u0648\u0636\u0648\u0639}-{council_topic_type_ucm}-{####}-{YYYY}",
+ "creation": "2023-07-07 00:31:01.058367",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_details_topic",
+  "agenda",
+  "council",
+  "creation_date",
+  "column_break_2eu3a",
+  "main_council_topic_type_ucm",
+  "council_topic_type_ucm",
+  "section_break_5hr7m",
+  "description",
+  "section_break_bwk7u",
+  "details1",
+  "details2",
+  "details3",
+  "details1_3",
+  "details1_4",
+  "details2_1",
+  "details2_2",
+  "details2_3",
+  "details2_4",
+  "details3_3",
+  "details3_2",
+  "details3_4",
+  "image",
+  "tab_break_waoxw",
+  "topic_decision",
+  "tab_break_crdsb",
+  "topic_council"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "council",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0644\u0645\u062c\u0644\u0633",
+   "options": "Council UCM"
+  },
+  {
+   "fieldname": "agenda",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u062c\u062f\u0648\u0644 \u0627\u0644\u0625\u0639\u0645\u0627\u0644",
+   "options": "Agenda"
+  },
+  {
+   "depends_on": "eval:doc.council_topic_type_ucm == \"\u062a\u0633\u0648\u064a\u0629 \u0648\u0636\u0639\"",
+   "fieldname": "details1",
+   "fieldtype": "Table",
+   "label": "\u0628\u064a\u0627\u0646\u0627\u062a \u062a\u0633\u0648\u064a\u0629 \u0648\u0636\u0639",
+   "options": "Topic UCM Details 1"
+  },
+  {
+   "depends_on": "eval:doc.council_topic_type_ucm == \"\u062a\u0631\u0642\u064a\u0629 \u0639\u0636\u0648\"",
+   "fieldname": "details2",
+   "fieldtype": "Table",
+   "label": "\u0628\u064a\u0627\u0646\u0627\u062a \u062a\u0631\u0642\u064a\u0629 \u0639\u0636\u0648",
+   "options": "Topic UCM Details 2"
+  },
+  {
+   "depends_on": "council_topic_type_ucm",
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0644\u0648\u0635\u0641"
+  },
+  {
+   "fieldname": "main_council_topic_type_ucm",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u062a\u0635\u0646\u064a\u0641 \u0627\u0644\u0645\u0648\u0636\u0648\u0639",
+   "options": "Council Topic Type UCM",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "depends_on": "main_council_topic_type_ucm",
+   "fieldname": "council_topic_type_ucm",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u0645\u0648\u0636\u0648\u0639",
+   "options": "Council Topic Type UCM",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "depends_on": "eval:doc.council_topic_type_ucm == \"\u0627\u0639\u062a\u0645\u0627\u062f \u0646\u062a\u0627\u0626\u062c\"",
+   "fieldname": "details3",
+   "fieldtype": "Table",
+   "label": "\u0628\u064a\u064a\u0627\u0646\u0627\u062a \u0625\u0639\u062a\u0645\u0627\u062f \u0646\u062a\u0627\u0626\u062c \u0627\u0644\u062f\u0643\u062a\u0648\u0631\u0627\u0629 \u0648\u0627\u0644\u0645\u0627\u062c\u0633\u062a\u064a\u0631",
+   "options": "Topic UCM Details 3"
+  },
+  {
+   "fieldname": "column_break_2eu3a",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_details_topic",
+   "fieldtype": "Tab Break",
+   "label": "\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0645\u0648\u0636\u0648\u0639"
+  },
+  {
+   "fieldname": "section_break_bwk7u",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "council_topic_type_ucm",
+   "fieldname": "creation_date",
+   "fieldtype": "Date",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0627\u0646\u0634\u0627\u0621",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.council_topic_type_ucm == \"\u062a\u0639\u064a\u064a\u0646\u0627\u062a\"",
+   "fieldname": "details1_3",
+   "fieldtype": "Table",
+   "label": "\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u062a\u0639\u064a\u064a\u0646\u0627\u062a",
+   "options": "Topic UCM Details 1-3"
+  },
+  {
+   "depends_on": "eval:doc.council_topic_type_ucm == \"\u062a\u062b\u0628\u064a\u062a \u0639\u0636\u0648\"",
+   "fieldname": "details1_4",
+   "fieldtype": "Table",
+   "label": "\u0628\u064a\u0627\u0646\u0627\u062a \u062a\u062b\u0628\u064a\u062a \u0639\u0636\u0648",
+   "options": "Topic UCM Details 1-4"
+  },
+  {
+   "depends_on": "eval:doc.council_topic_type_ucm == \"\u0625\u0639\u062a\u0645\u0627\u062f \u0643\u0634\u0648\u0641\u0627\u062a \u062e\u0631\u064a\u062c\u064a\u0646\"",
+   "fieldname": "details2_1",
+   "fieldtype": "Table",
+   "label": "\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0639\u062a\u0645\u0627\u062f \u0643\u0634\u0648\u0641\u0627\u062a \u062e\u0631\u064a\u062c\u064a\u0646",
+   "options": "Topic UCM Details 2-1"
+  },
+  {
+   "depends_on": "eval:doc.council_topic_type_ucm == \"\u0627\u0633\u0642\u0627\u0637 \u0623\u0633\u0645\u0627\u0621 \u0627\u0644\u062e\u0631\u064a\u062c\u064a\u0646\"",
+   "fieldname": "details2_2",
+   "fieldtype": "Table",
+   "label": "\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0633\u0642\u0627\u0637 \u0623\u0633\u0645\u0627\u0621 \u0627\u0644\u062e\u0631\u064a\u062c\u064a\u0646",
+   "options": "Topic UCM Details 2-2"
+  },
+  {
+   "depends_on": "eval:doc.council_topic_type_ucm == \"\u063a\u064a\u0627\u0628 \u0628\u0639\u0630\u0631\"",
+   "fieldname": "details2_3",
+   "fieldtype": "Table",
+   "label": "\u0628\u064a\u0627\u0646\u0627\u062a \u063a\u064a\u0627\u0628 \u0628\u0639\u0630\u0631",
+   "options": "Topic UCM Details 2-3"
+  },
+  {
+   "depends_on": "eval:doc.council_topic_type_ucm ==\"\u062a\u0635\u0648\u064a\u0628 \u0628\u064a\u0627\u0646\u0627\u062a\"",
+   "fieldname": "details2_4",
+   "fieldtype": "Table",
+   "label": "\u0628\u064a\u0627\u0646\u0627\u062a \u062a\u0635\u0648\u064a\u0628 \u0628\u064a\u0627\u0646\u0627\u062a",
+   "options": "Topic UCM Details 2-4"
+  },
+  {
+   "fieldname": "section_break_5hr7m",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.council_topic_type_ucm ==\"\u062a\u0631\u0634\u064a\u062d \u062f\u0627\u062e\u0644\u064a\"",
+   "fieldname": "details3_3",
+   "fieldtype": "Table",
+   "label": "\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u062a\u0631\u0634\u064a\u062d \u0627\u0644\u062f\u0627\u062e\u0644\u064a",
+   "options": "Topic UCM Details 3-3"
+  },
+  {
+   "depends_on": "eval:doc.council_topic_type_ucm ==\"\u0627\u0639\u062a\u0645\u0627\u062f \u0641\u062a\u062d \u0628\u0631\u0646\u0627\u0645\u062c\"",
+   "fieldname": "details3_2",
+   "fieldtype": "Table",
+   "label": "\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0639\u062a\u0645\u0627\u062f \u0641\u062a\u062d \u0628\u0631\u0646\u0627\u0645\u062c",
+   "options": "Topic UCM Details 3-2"
+  },
+  {
+   "depends_on": "eval:doc.council_topic_type_ucm ==\"\u062a\u0645\u062f\u064a\u062f \u0641\u062a\u0631\u0629 \u0627\u0644\u0627\u064a\u0641\u0627\u062f\"",
+   "fieldname": "details3_4",
+   "fieldtype": "Table",
+   "label": "\u0628\u064a\u0627\u0646\u0627\u062a \u062a\u0645\u062f\u064a\u062f \u0641\u062a\u0631\u0629 \u0627\u0644\u0627\u064a\u0641\u0627\u062f",
+   "options": "Topic UCM Details 3-4"
+  },
+  {
+   "fetch_from": "council.image",
+   "fetch_if_empty": 1,
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "\u0627\u0644\u0634\u0639\u0627\u0631"
+  },
+  {
+   "depends_on": "description",
+   "fieldname": "tab_break_waoxw",
+   "fieldtype": "Tab Break",
+   "label": "\u0627\u0644\u0642\u0631\u0627\u0631\u0627\u062a"
+  },
+  {
+   "fieldname": "topic_decision",
+   "fieldtype": "Table",
+   "options": "Topic Decision"
+  },
+  {
+   "depends_on": "description",
+   "fieldname": "tab_break_crdsb",
+   "fieldtype": "Tab Break",
+   "label": "\u0645\u0633\u0627\u0631 \u0627\u0644\u0645\u0648\u0636\u0648\u0639"
+  },
+  {
+   "fieldname": "topic_council",
+   "fieldtype": "Table",
+   "label": "\u0627\u0644\u0645\u062c\u0644\u0633 \u0627\u0644\u062a\u0627\u0644\u064a",
+   "options": "Topic Council"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Vote UCM",
+   "link_fieldname": "vote_type",
+   "table_fieldname": "\u062a\u0635\u0648\u064a\u062a"
+  }
+ ],
+ "modified": "2023-08-04 23:04:07.034397",
+ "modified_by": "Administrator",
+ "module": "Ucm App",
+ "name": "Topic UCM",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "\u0639\u0636\u0648 \u0645\u062c\u0644\u0633",
+   "select": 1,
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "\u0631\u0626\u064a\u0633 \u0645\u062c\u0644\u0633",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "\u0633\u0643\u0631\u062a\u0627\u0631\u064a\u0629",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

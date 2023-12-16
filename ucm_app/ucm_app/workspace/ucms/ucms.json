@@ -1,0 +1,135 @@
+{
+ "charts": [
+  {
+   "chart_name": "\u0627\u0644\u0627\u0639\u0636\u0627\u0621",
+   "label": "\u0627\u0644\u0627\u0639\u0636\u0627\u0621"
+  }
+ ],
+ "content": "[{\"id\":\"BfkC32v06y\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h2\\\" style=\\\"\\\">\u0646\u0638\u0627\u0645 \u0625\u062f\u0627\u0631\u0629 \u0645\u062c\u0627\u0644\u0633 \u0627\u0644\u062c\u0627\u0645\u0639\u0629</span>\",\"col\":12}},{\"id\":\"xTztRtM_c_\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"uViaHVpTCZ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0627\u0644\u062c\u0644\u0633\u0627\u062a\",\"col\":3}},{\"id\":\"gUWxX1Bkxw\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0627\u0644\u0623\u0639\u0636\u0627\u0621\",\"col\":3}},{\"id\":\"xI-KQ4Sfgc\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u062c\u062f\u0627\u0648\u0644 \u0627\u0644\u0627\u0639\u0645\u0627\u0644\",\"col\":3}},{\"id\":\"dp_SNgQ46k\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0627\u0644\u0645\u0648\u0627\u0636\u064a\u0639\",\"col\":3}},{\"id\":\"o4KFFNJO87\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0627\u0644\u0648\u062d\u062f\u0627\u062a \u0627\u0644\u0625\u062f\u0627\u0631\u064a\u0629\",\"col\":4}},{\"id\":\"r3XCWOvwXf\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0627\u0644\u0645\u062c\u0627\u0644\u0633\",\"col\":3}},{\"id\":\"AC3piij41m\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"iiqyLEoGNW\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"\u0639\u062f\u062f \u0627\u0644\u0645\u0648\u0627\u0636\u064a\u0639\",\"col\":4}},{\"id\":\"lNTf10VZJq\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"\u0639\u062f\u062f \u0627\u0644\u0645\u062c\u0627\u0644\u0633\",\"col\":4}},{\"id\":\"YayaKeAre8\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"\u0639\u062f\u062f \u0627\u0644\u062c\u0644\u0633\u0627\u062a\",\"col\":4}},{\"id\":\"yPhrNhhtSS\",\"type\":\"chart\",\"data\":{\"chart_name\":\"\u0627\u0644\u0627\u0639\u0636\u0627\u0621\",\"col\":12}}]",
+ "creation": "2023-07-14 01:19:35.306435",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "group-by",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "UCMS",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Topic",
+   "link_count": 0,
+   "link_to": "Topic Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Meetinges Report",
+   "link_count": 0,
+   "link_to": "Meetinges Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-08-05 00:42:43.615207",
+ "modified_by": "mahfood@gmail.com",
+ "module": "Ucm App",
+ "name": "UCMS",
+ "number_cards": [
+  {
+   "label": "\u0639\u062f\u062f \u0627\u0644\u0645\u062c\u0627\u0644\u0633",
+   "number_card_name": "\u0627\u0644\u0645\u062c\u0627\u0644\u0633"
+  },
+  {
+   "label": "\u0639\u062f\u062f \u0627\u0644\u0645\u0648\u0627\u0636\u064a\u0639",
+   "number_card_name": "Topic UCM"
+  },
+  {
+   "label": "\u0639\u062f\u062f \u0627\u0644\u062c\u0644\u0633\u0627\u062a",
+   "number_card_name": "\u0645\u062c\u0644\u0633"
+  }
+ ],
+ "owner": "adeeb@gmail.com",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "\u0639\u0636\u0648 \u0645\u062c\u0644\u0633"
+  },
+  {
+   "role": "\u0631\u0626\u064a\u0633 \u0645\u062c\u0644\u0633"
+  },
+  {
+   "role": "\u0633\u0643\u0631\u062a\u0627\u0631\u064a\u0629"
+  },
+  {
+   "role": "\u0645\u0642\u0631\u0631 \u0645\u062c\u0644\u0633"
+  }
+ ],
+ "sequence_id": 2.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "format": "{}\u0645\u0646\u0627\u0642\u0634\u0629",
+   "label": "\u0627\u0644\u062c\u0644\u0633\u0627\u062a",
+   "link_to": "Meeting UCM",
+   "stats_filter": "{\"meeting_status\":[\"=\",\"\u0645\u0646\u0627\u0642\u0634\u0629\"]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{}Active",
+   "label": "\u0627\u0644\u0623\u0639\u0636\u0627\u0621",
+   "link_to": "Members UCM",
+   "stats_filter": "{\"status\":[\"=\",\"Active\"]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "format": "{}\u0645\u0648\u0636\u0648\u0639",
+   "label": "\u0627\u0644\u0645\u0648\u0627\u0636\u064a\u0639",
+   "link_to": "Topic UCM",
+   "stats_filter": "{\"idx\":[\"=\",null]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "format": "{}\u062c\u062f\u0648\u0644 ",
+   "label": "\u062c\u062f\u0627\u0648\u0644 \u0627\u0644\u0627\u0639\u0645\u0627\u0644",
+   "link_to": "Agenda",
+   "stats_filter": "{\"description_details1\":[\"=\",null]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "List",
+   "format": "{}\u0645\u062c\u0644\u0633 ",
+   "label": "\u0627\u0644\u0645\u062c\u0627\u0644\u0633",
+   "link_to": "Council UCM",
+   "stats_filter": "{\"council_name\":[\"is\",\"set\"]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{}\u0648\u062d\u062f\u0629 \u0625\u062f\u0627\u0631\u064a\u0629",
+   "label": "\u0627\u0644\u0648\u062d\u062f\u0627\u062a \u0627\u0644\u0625\u062f\u0627\u0631\u064a\u0629",
+   "link_to": "Unit UCM",
+   "stats_filter": "{\"unit_ucm_name\":[\"is\",\"set\"]}",
+   "type": "DocType"
+  }
+ ],
+ "title": "UCMS"
+}

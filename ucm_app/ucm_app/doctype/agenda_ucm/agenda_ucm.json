@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{\u062c\u062f\u0648\u0644 \u0623\u0639\u0645\u0627\u0644} {council_name}-{agenda_number}-{YYYY}",
+ "creation": "2023-07-07 00:30:17.832757",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_details_agenda",
+  "council_name",
+  "meeting",
+  "column_break_1l96n",
+  "agenda_number",
+  "agenda_status",
+  "section_break_e4i93",
+  "image1"
+ ],
+ "fields": [
+  {
+   "fieldname": "council_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u062c\u0644\u0633",
+   "options": "Council UCM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "agenda_number",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "\u0631\u0642\u0645 \u062c\u062f\u0648\u0644 \u0627\u0644\u0623\u0639\u0645\u0627\u0644",
+   "options": "1\n2\n3\n4\n5\n6",
+   "reqd": 1
+  },
+  {
+   "fieldname": "agenda_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u062d\u0627\u0644\u0629 \u062c\u062f\u0648\u0644 \u0627\u0644\u0623\u0639\u0645\u0627\u0644",
+   "options": "\u0627\u0648\u0644\u064a\n\u0645\u0631\u062a\u0628\u0637 \u0628\u062c\u0644\u0633\u0629",
+   "reqd": 1
+  },
+  {
+   "fieldname": "meeting",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u062c\u0644\u0633\u0629",
+   "options": "Meeting UCM"
+  },
+  {
+   "fieldname": "column_break_1l96n",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_details_agenda",
+   "fieldtype": "Section Break",
+   "label": "\u0628\u064a\u0627\u0646\u0627\u062a \u062c\u062f\u0648\u0644 \u0627\u0644\u0623\u0639\u0645\u0627\u0644"
+  },
+  {
+   "fetch_from": "council_name.image",
+   "fetch_if_empty": 1,
+   "fieldname": "image1",
+   "fieldtype": "Attach Image",
+   "label": "\u0627\u0644\u0634\u0639\u0627\u0631",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_e4i93",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Topic UCM",
+   "link_fieldname": "agenda"
+  }
+ ],
+ "modified": "2023-08-04 22:59:10.099258",
+ "modified_by": "Administrator",
+ "module": "Ucm App",
+ "name": "Agenda UCM",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "\u0639\u0636\u0648 \u0645\u062c\u0644\u0633",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
